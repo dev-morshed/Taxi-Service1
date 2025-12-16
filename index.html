@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CabDiscount - Professional Taxi Services 24/7</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#6366f1',
+secondary: '#4f46e5'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+</head>
+<body class="bg-white">
+<header class="bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+  <h1 class="text-2xl font-sans text-primary"> Your logo</h1>
+</div>
+
+<nav class="hidden md:flex space-x-8">
+<a href="#" class="text-gray-900 hover:text-primary transition-colors duration-200 font-medium">Home</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Our Services</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">About </a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Our Expert </a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Faq </a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors duration-200 font-medium">Contact </a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex items-center text-gray-600">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="font-medium">+31 20 123 4567</span>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-secondary transition-colors duration-200 font-medium whitespace-nowrap">
+Book Now
+</button>
+</div>
+</div>
+</div>
+</header>
+<section class="relative bg-gradient-to-br from-primary via-purple-600 to-secondary min-h-[700px] overflow-hidden">
+<div class="absolute bottom-0 left-0 right-0 h-32 bg-white" style="border-radius: 50% 50% 0 0 / 100% 100% 0 0;"></div>
+<div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-white">
+<h1 class="text-6xl font-bold mb-6 leading-tight">
+Looking for a taxi near you?
+</h1>
+<p class="text-xl mb-8 leading-relaxed opacity-90">
+We're here 24/7 for your transportation needs. Reliable, comfortable, and always on time. Book your ride now and experience our premium service.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-yellow-400 text-gray-900 px-8 py-4 !rounded-button hover:bg-yellow-300 transition-colors duration-200 font-semibold text-lg whitespace-nowrap">
+Book Now
+</button>
+<button class="border-2 border-white text-white px-8 py-4 !rounded-button hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-lg whitespace-nowrap">
+Call: +31 20 123 4567
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="w-full h-96 bg-cover bg-center rounded-3xl shadow-2xl" style="background-image: url('https://readdy.ai/api/search-image?query=Happy%20woman%20with%20smartphone%20booking%20taxi%20ride%2C%20modern%20city%20background%2C%20professional%20photography%2C%20bright%20daylight%2C%20positive%20expression%2C%20urban%20lifestyle%2C%20high%20quality%20portrait%20photography&width=600&height=400&seq=hero002&orientation=landscape');"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Why choose our taxi service?</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the difference with our premium taxi services designed for your comfort and convenience</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center bg-gradient-to-br from-primary to-secondary p-8 rounded-3xl text-white transform hover:scale-105 transition-transform duration-200">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-2xl mx-auto mb-6">
+<i class="ri-time-line text-white ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">24/7 Available</h3>
+<p class="text-white/90 leading-relaxed text-sm">Available day and night for all your transportation needs</p>
+</div>
+<div class="text-center bg-gradient-to-br from-purple-500 to-pink-500 p-8 rounded-3xl text-white transform hover:scale-105 transition-transform duration-200">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-2xl mx-auto mb-6">
+<i class="ri-shield-check-line text-white ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Reliable & Safe</h3>
+<p class="text-white/90 leading-relaxed text-sm">Professional drivers with extensive background checks</p>
+</div>
+<div class="text-center bg-gradient-to-br from-yellow-400 to-orange-500 p-8 rounded-3xl text-white transform hover:scale-105 transition-transform duration-200">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-2xl mx-auto mb-6">
+<i class="ri-heart-line text-white ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Customer Satisfaction</h3>
+<p class="text-white/90 leading-relaxed text-sm">Over 50,000 satisfied customers with 4.9 star rating</p>
+</div>
+<div class="text-center bg-gradient-to-br from-green-500 to-teal-500 p-8 rounded-3xl text-white transform hover:scale-105 transition-transform duration-200">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-2xl mx-auto mb-6">
+<i class="ri-money-euro-circle-line text-white ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Best Prices</h3>
+<p class="text-white/90 leading-relaxed text-sm">Transparent rates with no hidden costs</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-32 bg-primary" style="border-radius: 0 0 50% 50% / 0 0 100% 100%;"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Our Taxi Fleet</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose from our diverse range of vehicles that perfectly fit your specific needs</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://i.postimg.cc/7ZmfKC8v/shutterstock-2199061053-1-png.webp');"></div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Standard</h3>
+<span class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full font-medium">Popular</span>
+</div>
+<p class="text-gray-600 mb-4">Perfect for daily rides with comfortable seating for up to 4 passengers.</p>
+<ul class="text-sm text-gray-500 mb-6 space-y-2">
+<li class="flex items-center"><i class="ri-user-line text-primary mr-2"></i>Up to 4 passengers</li>
+<li class="flex items-center"><i class="ri-temp-cold-line text-primary mr-2"></i>Air conditioning</li>
+<li class="flex items-center"><i class="ri-navigation-line text-primary mr-2"></i>GPS navigation</li>
+<li class="flex items-center"><i class="ri-bank-card-line text-primary mr-2"></i>Card payment available</li>
+</ul>
+<div class="text-center mb-4">
+<span class="text-3xl font-bold text-primary">€2.50</span>
+<span class="text-gray-500">/km</span>
+</div>
+<button class="w-full bg-primary text-white py-3 !rounded-button hover:bg-secondary transition-colors duration-200 font-medium whitespace-nowrap">
+Book Standard Taxi
+</button>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://i.postimg.cc/3wzrqmtz/shutterstock-2288114495-1-png-1.webp');"></div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Van</h3>
+<span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full font-medium">Groups</span>
+</div>
+<p class="text-gray-600 mb-4">Spacious van perfect for groups, families, or when you have extra luggage.</p>
+<ul class="text-sm text-gray-500 mb-6 space-y-2">
+<li class="flex items-center"><i class="ri-group-line text-primary mr-2"></i>Up to 8 passengers</li>
+<li class="flex items-center"><i class="ri-suitcase-line text-primary mr-2"></i>Extra luggage space</li>
+<li class="flex items-center"><i class="ri-temp-cold-line text-primary mr-2"></i>Climate control</li>
+<li class="flex items-center"><i class="ri-discount-percent-line text-primary mr-2"></i>Group discount</li>
+</ul>
+<div class="text-center mb-4">
+<span class="text-3xl font-bold text-primary">€3.20</span>
+<span class="text-gray-500">/km</span>
+</div>
+<button class="w-full bg-primary text-white py-3 !rounded-button hover:bg-secondary transition-colors duration-200 font-medium whitespace-nowrap">
+Book Van Taxi
+</button>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://i.postimg.cc/8Pc379pW/shutterstock-23082346-1-png.webp');"></div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Luxury</h3>
+<span class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full font-medium">Premium</span>
+</div>
+<p class="text-gray-600 mb-4">Premium vehicles for special occasions, business meetings, or stylish travel.</p>
+<ul class="text-sm text-gray-500 mb-6 space-y-2">
+<li class="flex items-center"><i class="ri-vip-crown-line text-primary mr-2"></i>Leather seats</li>
+<li class="flex items-center"><i class="ri-user-star-line text-primary mr-2"></i>Professional driver</li>
+<li class="flex items-center"><i class="ri-wifi-line text-primary mr-2"></i>Wi-Fi & chargers</li>
+<li class="flex items-center"><i class="ri-goblet-line text-primary mr-2"></i>Free water</li>
+</ul>
+<div class="text-center mb-4">
+<span class="text-3xl font-bold text-primary">€4.80</span>
+<span class="text-gray-500">/km</span>
+</div>
+<button class="w-full bg-primary text-white py-3 !rounded-button hover:bg-secondary transition-colors duration-200 font-medium whitespace-nowrap">
+Book Luxury Taxi
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Experience the Most Comfortable Ride</h2>
+<p class="text-xl text-gray-600 mb-8 leading-relaxed">
+Our commitment to excellence ensures every journey is smooth, safe, and enjoyable. From the moment you book until you reach your destination, we prioritize your comfort and satisfaction.
+</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-star-fill text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">4.9/5 Customer Rating</h4>
+<p class="text-gray-600">Based on over 15,000 verified customer reviews</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-car-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">Clean & Well-Maintained Vehicles</h4>
+<p class="text-gray-600">Regular cleaning and maintenance for optimal comfort</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-user-smile-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">Professional Drivers</h4>
+<p class="text-gray-600">Courteous, experienced, and knowledgeable local drivers</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
+<div>
+<div class="font-medium text-gray-900">Sarah Johnson</div>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm">"Excellent service! The driver was punctual and the car was spotless. Highly recommend!"</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
+<div>
+<div class="font-medium text-gray-900">Michael Chen</div>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm">"Best taxi service in the city. Always reliable and professional drivers."</p>
+</div>
+</div>
+<div class="space-y-4 mt-8">
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
+<div>
+<div class="font-medium text-gray-900">Emma Williams</div>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm">"Quick booking, comfortable ride, and fair pricing. Perfect for business trips!"</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
+<div>
+<div class="font-medium text-gray-900">David Rodriguez</div>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 text-sm">"Amazing service for airport transfers. Never missed a flight thanks to their punctuality!"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Our Expert Instructors</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Meet our professional and experienced driving instructors who are committed to your success</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-64 bg-cover bg-center object-top" style="background-image: url('https://i.postimg.cc/ZKLkNp3H/car5.jpg');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Mark van der Berg</h3>
+<p class="text-primary font-medium mb-2">15 years experience</p>
+<p class="text-gray-600 text-sm">Specialist in automatic transmission and defensive driving techniques</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-64 bg-cover bg-center object-top" style="background-image: url('https://i.postimg.cc/9FCtD7c9/carf3.jpg');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Lisa Jansen</h3>
+<p class="text-primary font-medium mb-2">12 years experience</p>
+<p class="text-gray-600 text-sm">Expert in city driving and nervous driver coaching</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-64 bg-cover bg-center object-top" style="background-image: url('https://i.postimg.cc/rpQ7HkgP/car4.jpg');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Peter Koning</h3>
+<p class="text-primary font-medium mb-2">20 years experience</p>
+<p class="text-gray-600 text-sm">Highway driving specialist and exam preparation expert</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-64 bg-cover bg-center object-top" style="background-image: url('https://i.postimg.cc/9Qzxf7BY/car6.jpg');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Emma de Vries</h3>
+<p class="text-primary font-medium mb-2">8 years experience</p>
+<p class="text-gray-600 text-sm">Young driver specialist and parallel parking expert</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-gray-50 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-32 bg-white" style="border-radius: 0 0 50% 50% / 0 0 100% 100%;"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Our Fleet - Well-Maintained Vehicles</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience premium comfort and safety with our meticulously maintained vehicle fleet</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Clean%20modern%20sedan%20taxi%20interior%2C%20premium%20leather%20seats%2C%20spotless%20dashboard%2C%20professional%20vehicle%20maintenance%2C%20bright%20clean%20lighting%2C%20high%20quality%20automotive%20photography&width=400&height=300&seq=fleet001&orientation=landscape');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Premium Interiors</h3>
+<p class="text-gray-600 text-sm">Leather seats, climate control, and spotless interiors cleaned after every ride</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20vehicle%20maintenance%20garage%2C%20modern%20automotive%20service%2C%20clean%20organized%20workshop%2C%20taxi%20fleet%20maintenance%2C%20bright%20professional%20lighting%2C%20high%20quality%20commercial%20photography&width=400&height=300&seq=fleet002&orientation=landscape');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Regular Maintenance</h3>
+<p class="text-gray-600 text-sm">Weekly inspections and professional servicing to ensure optimal performance</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20taxi%20dashboard%20with%20advanced%20safety%20features%2C%20GPS%20navigation%20system%2C%20clean%20professional%20interior%2C%20high%20tech%20automotive%20equipment%2C%20bright%20clear%20lighting&width=400&height=300&seq=fleet003&orientation=landscape');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Advanced Safety</h3>
+<p class="text-gray-600 text-sm">Latest safety features including GPS tracking, emergency systems, and regular safety checks</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-200 transform hover:scale-105">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Eco-friendly%20hybrid%20taxi%20vehicle%20exterior%2C%20clean%20modern%20design%2C%20environmental%20sustainability%2C%20green%20transportation%2C%20professional%20automotive%20photography%2C%20bright%20urban%20background&width=400&height=300&seq=fleet004&orientation=landscape');"></div>
+<div class="p-6 text-center">
+<h3 class="text-xl font-bold text-gray-900 mb-2">Eco-Friendly Fleet</h3>
+<p class="text-gray-600 text-sm">Hybrid and electric vehicles reducing emissions while maintaining premium comfort</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Text Block First -->
+      <div>
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Why Our Customers Choose Us?</h2>
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+          Discover what makes us the preferred choice for thousands of satisfied customers across the Netherlands.
+        </p>
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-primary to-secondary rounded-2xl mr-4 mt-1">
+              <i class="ri-time-line text-white ri-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-2 text-lg">Always On Time</h4>
+              <p class="text-gray-600">98% punctuality rate with real-time tracking and professional drivers who know the city inside out</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl mr-4 mt-1">
+              <i class="ri-money-euro-circle-line text-white ri-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-2 text-lg">Transparent Pricing</h4>
+              <p class="text-gray-600">No hidden fees, upfront pricing with instant quotes and competitive rates that beat the competition</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl mr-4 mt-1">
+              <i class="ri-customer-service-2-line text-white ri-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-2 text-lg">24/7 Customer Support</h4>
+              <p class="text-gray-600">Round-the-clock assistance in multiple languages with instant response and problem resolution</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mr-4 mt-1">
+              <i class="ri-shield-check-line text-white ri-lg"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 mb-2 text-lg">Safety Guaranteed</h4>
+              <p class="text-gray-600">Fully insured vehicles, background-checked drivers, and GPS tracking for your complete peace of mind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Block Second (Now Opposite) -->
+      <div class="h-96 bg-cover bg-center rounded-3xl shadow-2xl" style="background-image: url('https://i.postimg.cc/QMs6syVk/carf2.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="h-96 bg-cover bg-center rounded-2xl" style="background-image: url('https://i.postimg.cc/rp6B4jsd/carf1.jpg');"></div>
+<div>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Taxi Services for Groups & Business</h2>
+<p class="text-xl text-gray-600 mb-8 leading-relaxed">
+Specialized transportation solutions for corporate events, group outings, and business travel. We understand the unique needs of business travelers and large groups.
+</p>
+<div class="grid sm:grid-cols-2 gap-6 mb-8">
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Group Transportation</h4>
+<ul class="text-gray-600 space-y-1 text-sm">
+<li>• Airport group transfers</li>
+<li>• Event transportation</li>
+<li>• Wedding party services</li>
+<li>• Tourist group tours</li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Business Services</h4>
+<ul class="text-gray-600 space-y-1 text-sm">
+<li>• Corporate accounts</li>
+<li>• Monthly billing</li>
+<li>• Executive transportation</li>
+<li>• Conference shuttles</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-secondary transition-colors duration-200 font-medium whitespace-nowrap">
+Book Group Ride
+</button>
+<button class="border-2 border-primary text-primary px-6 py-3 !rounded-button hover:bg-primary hover:text-white transition-colors duration-200 font-medium whitespace-nowrap">
+Corporate Services
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Left side: Contact Form -->
+      <div>
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Get in touch with us for any inquiries or special requests. We're here to help you 24/7.
+          </p>
+        </div>
+        <form id="contact-form" class="bg-white rounded-3xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+              <input type="text" name="first_name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+              <input type="text" name="last_name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+              <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+              <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Service Type</label>
+            <div class="relative">
+              <button type="button" id="service-dropdown" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm text-left bg-white flex justify-between items-center">
+                <span id="selected-service">Select a service...</span>
+                <i class="ri-arrow-down-s-line text-gray-400"></i>
+              </button>
+              <div id="service-options" class="hidden absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg">
+                <div class="service-option px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm" data-value="airport_transfer">Airport Transfer</div>
+                <div class="service-option px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm" data-value="city_ride">City Ride</div>
+                <div class="service-option px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm" data-value="group_transport">Group Transportation</div>
+                <div class="service-option px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm" data-value="corporate">Corporate Services</div>
+                <div class="service-option px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm" data-value="luxury">Luxury Ride</div>
+                <div class="service-option px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm" data-value="other">Other</div>
+              </div>
+              <input type="hidden" name="service_type" id="service-type-input">
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+            <textarea name="message" required rows="5" maxlength="500" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none" placeholder="Tell us about your requirements..."></textarea>
+            <div class="text-right text-xs text-gray-500 mt-1">
+              <span id="char-count">0</span>/500 characters
+            </div>
+          </div>
+
+          <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button hover:bg-secondary transition-colors duration-200 font-semibold text-lg whitespace-nowrap">
+            Send Message
+          </button>
+
+          <div id="form-status" class="mt-4 text-center hidden"></div>
+        </form>
+      </div>
+
+      <!-- Right side: Map Section -->
+      <div>
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Find Us on the Map</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Located in the heart of Amsterdam, we serve the entire metropolitan area and beyond</p>
+        </div>
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <div class="h-96 bg-cover bg-center relative" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');">
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="absolute top-6 left-6 bg-white/95 backdrop-blur-sm rounded-xl p-6 max-w-sm">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary rounded-2xl mr-4">
+                  <i class="ri-map-pin-fill text-white ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">Our Location</h3>
+                  <p class="text-gray-600 text-sm">Amsterdam Central</p>
+                </div>
+              </div>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center text-gray-700">
+                  <i class="ri-map-pin-line text-primary mr-2"></i>
+                  <span>123 Main Street, 1012 AB Amsterdam</span>
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i class="ri-phone-line text-primary mr-2"></i>
+                  <span>+31 20 123 4567</span>
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i class="ri-time-line text-primary mr-2"></i>
+                  <span>Open 24/7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary to-secondary rounded-2xl mx-auto mb-4">
+                  <i class="ri-car-line text-white ri-2x"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-2">Pickup Areas</h3>
+                <p class="text-gray-600 text-sm">Amsterdam, Utrecht, The Hague, Rotterdam and surrounding areas</p>
+              </div>
+              <div class="text-center">
+                <div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl mx-auto mb-4">
+                  <i class="ri-flight-takeoff-line text-white ri-2x"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-2">Airport Services</h3>
+                <p class="text-gray-600 text-sm">Schiphol, Eindhoven, Rotterdam airports with dedicated pickup zones</p>
+              </div>
+              <div class="text-center">
+                <div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl mx-auto mb-4">
+                  <i class="ri-road-map-line text-white ri-2x"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-2">Coverage Area</h3>
+                <p class="text-gray-600 text-sm">Nationwide coverage with express service in major Dutch cities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-20 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+<p class="text-xl text-gray-600">Get answers to common questions about our taxi services</p>
+</div>
+<div class="space-y-4">
+<div class="bg-white rounded-xl shadow-sm">
+<button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle" data-target="faq1">
+<span class="font-semibold text-gray-900">How do I book a taxi?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-6 pb-4 hidden faq-content" id="faq1">
+<p class="text-gray-600">You can book a taxi through our website, mobile app, or by calling our 24/7 hotline at +31 20 123 4567. Online booking is quick and easy - just enter your pickup location, destination, and preferred time.</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm">
+<button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle" data-target="faq2">
+<span class="font-semibold text-gray-900">What payment methods do you accept?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-6 pb-4 hidden faq-content" id="faq2">
+<p class="text-gray-600">We accept cash, all major credit cards (Visa, Mastercard, American Express), debit cards, and mobile payments including Apple Pay and Google Pay. Corporate accounts can also use monthly billing.</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm">
+<button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle" data-target="faq3">
+<span class="font-semibold text-gray-900">Are your taxis available 24/7?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-6 pb-4 hidden faq-content" id="faq3">
+<p class="text-gray-600">Yes, our taxi service operates 24 hours a day, 7 days a week, including holidays. Whether you need an early morning airport transfer or a late-night ride home, we're always available to serve you.</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm">
+<button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle" data-target="faq4">
+<span class="font-semibold text-gray-900">How much does a taxi ride cost?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-6 pb-4 hidden faq-content" id="faq4">
+<p class="text-gray-600">Our pricing is competitive and transparent. Rates are calculated based on distance and time, with no hidden fees. You can get an instant quote when booking online, and we offer fixed rates for airport transfers and popular destinations.</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm">
+<button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle" data-target="faq5">
+<span class="font-semibold text-gray-900">Can I cancel or modify my booking?</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-6 pb-4 hidden faq-content" id="faq5">
+<p class="text-gray-600">Yes, you can cancel or modify your booking up to 30 minutes before the scheduled pickup time without any charges. For cancellations within 30 minutes or no-shows, a small cancellation fee may apply.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-2xl font-sans text-primary"> Your logo</h3>
+<p class="text-gray-300 mb-6 leading-relaxed">Professional taxi services available 24/7. Your reliable transportation partner in the city.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200">
+<i class="ri-instagram-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors duration-200">
+<i class="ri-linkedin-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+<ul class="space-y-2 text-gray-300">
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Home</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Our Services</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">About Us</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Contact Us</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Book Now</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Services</h4>
+<ul class="space-y-2 text-gray-300">
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Airport Transfer</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">City Rides</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Group Transportation</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Corporate Services</a></li>
+<li><a href="#" class="hover:text-primary transition-colors duration-200">Luxury Rides</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+<div class="space-y-3 text-gray-300">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line"></i>
+</div>
+<span>+31 20 123 4567</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line"></i>
+</div>
+<span>info@cabdiscount.nl</span>
+</div>
+<div class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span>123 Main Street<br>1012 AB Amsterdam<br>Netherlands</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">© 2025. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors duration-200">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors duration-200">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors duration-200">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="faq-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const faqToggles = document.querySelectorAll('.faq-toggle');
+faqToggles.forEach(toggle => {
+toggle.addEventListener('click', function() {
+const targetId = this.getAttribute('data-target');
+const content = document.getElementById(targetId);
+const icon = this.querySelector('.faq-icon');
+if (content.classList.contains('hidden')) {
+document.querySelectorAll('.faq-content').forEach(item => {
+item.classList.add('hidden');
+});
+document.querySelectorAll('.faq-icon').forEach(item => {
+item.className = 'ri-add-line text-gray-400 faq-icon';
+});
+content.classList.remove('hidden');
+icon.className = 'ri-subtract-line text-primary faq-icon';
+} else {
+content.classList.add('hidden');
+icon.className = 'ri-add-line text-gray-400 faq-icon';
+}
+});
+});
+});
+</script>
+
+
+
+</body>
+</html>
